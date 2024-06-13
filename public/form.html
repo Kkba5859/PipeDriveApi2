@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer & Job Details Form</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Client Details</h2>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email (optional)</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <h2>Service Location</h2>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state">
+            </div>
+            <div class="form-group">
+                <label for="zipCode">Zip Code</label>
+                <input type="text" id="zipCode" name="zipCode">
+            </div>
+            <div class="form-group">
+                <label for="area">Area</label>
+                <select id="area" name="area">
+                    <option value="">Select Area</option>
+                    <!-- Add area options here -->
+                </select>
+            </div>
+        </div>
+        <div>
+            <h2>Job Details</h2>
+            <div class="form-group">
+                <label for="jobType">Job Type</label>
+                <select id="jobType" name="jobType">
+                    <option value="">Select Job Type</option>
+                    <option value="variant1">Variant 1</option>
+                    <option value="variant2">Variant 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="jobSource">Job Source</label>
+                <select id="jobSource" name="jobSource">
+                    <option value="">Select Job Source</option>
+                    <option value="variant1">Variant 1</option>
+                    <option value="variant2">Variant 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="jobDescription">Job Description (optional)</label>
+                <textarea id="jobDescription" name="jobDescription"></textarea>
+            </div>
+            <h2>Scheduled</h2>
+            <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" name="startDate">
+            </div>
+            <div class="form-group">
+                <label for="startTime">Start Time</label>
+                <input type="time" id="startTime" name="startTime">
+            </div>
+            <div class="form-group">
+                <label for="endTime">End Time</label>
+                <input type="time" id="endTime" name="endTime">
+            </div>
+            <div class="form-group">
+                <label for="testSelect">Test Select</label>
+                <select id="testSelect" name="testSelect">
+                    <option value="">Select Option</option>
+                    <!-- Add test select options here -->
+                </select>
+            </div>
+        </div>
+    </div>
+    <button type="button" onclick="saveData()">Save</button>
+    <script src="form.js"></script>
+</body>
+</html>
